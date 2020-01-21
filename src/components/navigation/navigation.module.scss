@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.navigationWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.navigation {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: -2rem;
+    padding-left: 2rem;
+
+    &:hover, &:focus, &:active {
+      border-left: 8px $accentColor solid;
+      padding-left: calc(2rem - 8px);
+    }
+  }
+
+}

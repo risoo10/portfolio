@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap&subset=latin-ext');
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "../variables";
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.5;
+
+
+    a {
+        color: $buttonColor;
+
+        &:hover, &:focus, &:active {
+            color: $accentColor;
+            text-decoration: none;
+        }
+    }
+
+}
+
+

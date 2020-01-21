@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.iconBtn {
+  background: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+
+  i {
+    color: $buttonColor;
+
+    &:hover, &:focus, &:visited {
+      color: $accentColor;
+    }
+  }
+}
