@@ -16,6 +16,7 @@ export default () => <div className={styles.navigationWrapper}>
 
   <div>
     <IconButton iconClass="fab fa-linkedin-in" />
+    <IconButton iconClass="fab fa-github" />
     <IconButton iconClass="fab fa-instagram" />
   </div>
 </div>

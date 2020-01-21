@@ -1,23 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap&subset=latin-ext');
-@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "../variables";
 
 html, body {
-    height: 100%;
-    box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+
+  a {
+    color: $buttonColor;
+
+    &:hover, &:focus, &:active {
+      color: $accentColor;
+      text-decoration: none;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, a, button {
     font-family: 'Inconsolata', monospace;
     line-height: 1.5;
+    letter-spacing: 0.1rem;
+  }
 
+  h1 {
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: bold;
+  }
 
-    a {
-        color: $buttonColor;
+  h3 {
+    font-weight: bold;
+    font-size: 28px;
+  }
 
-        &:hover, &:focus, &:active {
-            color: $accentColor;
-            text-decoration: none;
-        }
+  button {
+    background-color: $buttonColor;
+    color: $lightColor;
+    font-size: 1.5rem;
+    padding: 10px 16px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $accentColor;
+      outline: none;
     }
+  }
 
 }
 

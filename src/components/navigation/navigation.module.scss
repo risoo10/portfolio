@@ -21,7 +21,7 @@
     margin-left: -2rem;
     padding-left: 2rem;
 
-    &:hover, &:focus, &:active {
+    &:hover {
       border-left: 8px $accentColor solid;
       padding-left: calc(2rem - 8px);
     }
