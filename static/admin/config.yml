@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: risoo10/portfolio
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+- name: software-post
+  label: Software post
+  folder: posts/software
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+  - { name: date, label: Date, widget: datetime }
+  - { name: title, label: Title, widget: string }
+  - { name: description, label: Short description, widget: string}
+  - { name: body, label: Body, widget: markdown }
