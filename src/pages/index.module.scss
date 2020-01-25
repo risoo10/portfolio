@@ -1,0 +1,38 @@
+@import "../variables";
+
+.aboutMeWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .avatar {
+    height: 150px;
+    width: auto;
+    border-radius: 100%;
+  }
+
+  .subheader {
+    width: 60%;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.showcaseWrapper {
+  background-color: $lightBackgroundColor;
+}
+
+.flexRow {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .aboutMeWrapper {
+    .subheader {
+      width: 80%;
+    }
+  }
+}

@@ -11,12 +11,16 @@ dotEnv.config({
 })
 
 module.exports = {
+  siteMetadata: {
+    title: "Richard Mocák",
+  }
+  ,
   plugins: [
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-prismic`,
       options: {
-        repositoryName: `your-repository-name`,
+        repositoryName: `richardmocak-portfolio`,
         accessToken: `${process.env.API_KEY}`,
         linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
       },
