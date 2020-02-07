@@ -5,12 +5,22 @@
   box-shadow: none;
   border: none;
   outline: none;
+  padding: 0.5rem;
+  color: $buttonColor;
+  cursor: pointer;
 
   i {
-    color: $buttonColor;
+    font-size: 1.5rem;
+  }
 
-    &:hover, &:focus, &:visited {
+  &:hover, &:focus, &:visited {
+    outline: none;
+  }
+
+  &:hover {
+    i {
       color: $accentColor;
     }
   }
+
 }

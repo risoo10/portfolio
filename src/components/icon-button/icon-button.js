@@ -1,6 +1,7 @@
-import React from "react"
+import React from 'react'
 import styles from './icon-button.module.scss'
 
 export default function IconButton(props) {
-  return <button className={styles.iconBtn}><i className={`${props.iconClass} fa-lg`}/></button>
+  return <a className={styles.iconBtn} href={props.url || undefined} target={props.target || '_blank'}><i
+    className={`${props.iconClass} fa-lg`}/></a>
 }

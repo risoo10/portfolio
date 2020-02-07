@@ -16,6 +16,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "bootstrap": "^4.4.1",
+    "framer-motion": "^1.8.4",
     "gatsby": "^2.18.12",
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-typescript": "^2.1.26",

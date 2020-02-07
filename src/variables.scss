@@ -1,7 +1,9 @@
-$darkColor: #000000;
+$darkColor: #212433;
 $lightColor: #ffffff;
+$accentColor: #0EC99D;
+$secondaryColor: #A9CDDF;
+$brandColor: #005B7B;
 
-$lightBackgroundColor: #F3F6F9;
-
+$lightBackgroundColor: rgba($secondaryColor, .2);
 $buttonColor: $darkColor;
-$accentColor: #0053D6;
+

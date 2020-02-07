@@ -1,8 +1,14 @@
-import React from 'react';
-import Layout from "../components/layout/layout"
+import React from 'react'
+import Layout from '../components/layout/layout'
 
-export default function Contact({children}) {
+export default function Contact({ children }) {
   return <Layout>
-    <p>Contact page works</p>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col text-center">
+          <h1>Contact</h1>
+        </div>
+      </div>
+    </div>
   </Layout>
 };
