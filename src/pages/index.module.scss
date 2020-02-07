@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
 
   h1 {
     border: 5px solid $accentColor;
@@ -28,6 +29,7 @@
 }
 
 .showcaseWrapper {
+  height: 80vh;
   background-color: $lightBackgroundColor;
 }
 

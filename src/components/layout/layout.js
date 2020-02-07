@@ -5,14 +5,12 @@ import styles from './layout.module.scss'
 
 export default function Layout({ children }) {
   return <React.Fragment>
-    <div className="container-fluid" style={{ height: '100vh' }}>
-      <div className="row" style={{ height: '100%' }}>
-        <div className={`col ${styles.navigationWrapper}`}>
-          <Navigation></Navigation>
-        </div>
-        <div className="col">
-          {children}
-        </div>
+    <div className={styles.navigationWrapper}>
+      <Navigation></Navigation>
+    </div>
+    <div className={styles.contentWrapper}>
+      <div className="container-fluid">
+        {children}
       </div>
     </div>
   </React.Fragment>
