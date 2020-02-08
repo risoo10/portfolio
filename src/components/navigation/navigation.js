@@ -21,20 +21,14 @@ export default function Navigation() {
 
   const overlayMenuAnimations = {
     hidden: {
-      scale: 0,
-      x: '100%',
       y: '-100%',
-      borderBottomLeftRadius: '900px',
     },
     visible: {
-      scale: 1,
-      x: 0,
       y: 0,
-      borderBottomLeftRadius: 0,
     },
   }
 
-  return <React.Fragment>
+  return <div className={styles.rootWrapper}>
     <div className={styles.navigationWrapper}>
       <div>
         <Link to="/"><img className={styles.logoImg} src={logoImg} alt="logo"/></Link>
@@ -55,16 +49,15 @@ export default function Navigation() {
         }
       </div>
     </div>
-    {menuOpened && <motion.div
+    <motion.div
       initial="hidden"
-      animate="visible"
-      exit="hidden"
+      animate={menuOpened ? 'visible' : 'hidden'}
       transition={{
         duration: fastAnimationDuration,
       }}
       variants={overlayMenuAnimations}
       className={styles.overlayMenu}>
       {navigationLinks()}
-    </motion.div>}
-  </React.Fragment>
+    </motion.div>
+  </div>
 }
