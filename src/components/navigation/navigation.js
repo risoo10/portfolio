@@ -30,9 +30,7 @@ export default function Navigation() {
 
   return <div className={styles.rootWrapper}>
     <div className={styles.navigationWrapper}>
-      <div>
-        <Link to="/"><img className={styles.logoImg} src={logoImg} alt="logo"/></Link>
-      </div>
+      <Link to="/"><img className={styles.logoImg} src={logoImg} alt="logo"/></Link>
 
       {navigationLinks()}
 

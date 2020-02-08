@@ -16,7 +16,7 @@ export function Carousel(props) {
   }
 
   const textAnimation = {
-    hidden: { y: ['0px', '0px', '0px', '200px'] },
+    hidden: { y: ['0px', '0px', '0px', '100px'] },
     visible: { y: 0 },
   }
 

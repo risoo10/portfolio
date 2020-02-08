@@ -1,82 +1,122 @@
 @import "../../variables";
 
-.carouselWrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
+@media only screen and (min-width: 320px) {
 
-.carouselControls {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  left: 0;
-  background-color: $darkColor;
-  color: $lightColor;
-  padding: 0.2rem;
-  font-size: 1.2em;
-
-  i {
-    padding: 0.7rem;
-    cursor: pointer;
-
-    &:hover {
-      color: $accentColor;
-    }
+  .carouselWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
-}
 
-.carouselState {
-  font-size: 1.3em;
-  padding: 0.4rem 0.8rem;
-  background-color: $lightColor;
-  color: $darkColor;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-
-  .currentStep {
-    font-weight: bold;
-    font-size: 1.4em;
-  }
-}
-
-.slides {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-
-  .imgWrapper {
-    flex: 1;
-    font-size: 25pt;
-    text-align: center;
-    padding: 2rem;
+  .carouselControls {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    background-color: $darkColor;
     color: $lightColor;
-    background: $accentColor;
-  }
+    padding: 0.2rem;
+    font-size: 1.2em;
 
-  .descriptionWrapper {
-    width: 40%;
-    z-index: 8;
-    max-width: 600px;
-    padding: 2.5rem 0;
-    background-color: $lightBackgroundColor;
+    i {
+      padding: 0.7rem;
+      cursor: pointer;
 
-    .descriptionContent {
-      width: 100%;
-      height: 100%;
-      background-color: $lightColor;
-      margin-left: -2.5rem;
-      padding: 1rem;
+      &:hover {
+        color: $accentColor;
+      }
     }
   }
+
+  .carouselState {
+    font-size: 1.3em;
+    padding: 0.4rem 0.8rem;
+    background-color: $lightColor;
+    color: $darkColor;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    .currentStep {
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+  }
+
+  .slides {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    .imgWrapper {
+      flex: 1;
+      font-size: 25pt;
+      text-align: center;
+      padding: 2rem;
+      color: $lightColor;
+      background: $accentColor;
+    }
+
+    .descriptionWrapper {
+      z-index: 8;
+      height: 300px;
+      padding: 0 2.5rem;
+      background-color: $lightBackgroundColor;
+
+      .descriptionContent {
+        width: 100%;
+        height: 100%;
+        margin-top: -2.5rem;
+        background-color: $lightColor;
+        padding: 1rem;
+      }
+    }
+  }
+
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .slide {
+    flex-direction: row;
+    height: 100%;
+
+    .descriptionWrapper {
+      width: 40%;
+      max-width: 600px;
+      padding: 2.5rem 0;
+      height: auto;
+
+      .descriptionContent {
+        margin-top: 0;
+        margin-left: -2.5rem;
+      }
+    }
+  }
+
+  .carouselState {
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
