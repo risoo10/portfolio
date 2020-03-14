@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const dotEnv = require("dotenv")
+const dotEnv = require('dotenv')
 
 dotEnv.config({
   path: `.env`,
@@ -12,19 +12,18 @@ dotEnv.config({
 
 module.exports = {
   siteMetadata: {
-    title: "Richard Mocák",
+    title: 'Richard Mocák',
   }
   ,
   plugins: [
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-source-prismic`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        repositoryName: `richardmocak-portfolio`,
-        accessToken: `${process.env.API_KEY}`,
-        linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
+        path: `${__dirname}/src/markdown-pages`,
+        name: `markdown-pages`,
       },
     },
-
+    `gatsby-transformer-remark`,
   ],
 }

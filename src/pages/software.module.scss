@@ -1,0 +1,58 @@
+@import "../variables";
+
+.pageSubtitle {
+  font-size: 1.3rem;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.postItem {
+  background-color: $lightBackgroundColor;
+  padding: 1.5rem;
+  text-align: left;
+
+  .textWrapper {
+    background-color: $lightColor;
+    a {
+      color: $darkColor;
+
+      &:hover .title {
+        color: $accentColor;
+      }
+    }
+    .textContent {
+      height: 270px;
+      padding: 1.5rem;
+    }
+  }
+
+  .tagList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .tagItem {
+      background-color: $darkColor;
+      color: $lightColor;
+      border-radius: 50px;
+      padding: .3rem .6rem;
+    }
+  }
+
+  .imageWrapper {
+    height: 300px;
+    margin: -1.5rem;
+    background-color: #212433;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .extraLargeColumn {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
