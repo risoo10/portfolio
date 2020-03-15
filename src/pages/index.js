@@ -44,7 +44,7 @@ export default ({ data, pageContext }) => {
         <motion.h3 {...introAnimationProps} custom={1}
                    className={`${styles.subheader} ${styles.dynamicWidth} text-center mt-3 mb-4`}>
           I am a frontend and backend web developer with
-          passion for graphic design and photography.
+          passion for deep learning, graphic design and photography.
         </motion.h3>
         <br/>
         <motion.h4 {...introAnimationProps} custom={1}

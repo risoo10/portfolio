@@ -67,14 +67,24 @@ html, body {
     }
 
   }
+
+  hr {
+    border-top: 1px solid $lightBackgroundColor;
+    border-radius: 5px;
+    width: 91%;
+    margin: 2rem auto;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  .separator {
+    padding: 2rem 0;
+  }
 }
 
-hr {
-  border-top: 1px solid $lightBackgroundColor;
-  border-radius: 5px;
-  width: 91%;
-  margin: 2rem auto;
-}
+
 
 @media only screen and (min-width: 320px) {
 

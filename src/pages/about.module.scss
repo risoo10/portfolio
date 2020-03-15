@@ -1,0 +1,96 @@
+@import "../variables";
+
+.portraitImage {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.extraLightBg {
+  background-color: $extraLightBackground;
+}
+
+.superLightBg {
+  background-color: $superLightBackground;
+}
+
+.skillItem {
+  text-align: center;
+  background-color: $superLightBackground;
+  padding: 0 -3px;
+  border-right: 6px solid $extraLightBackground;
+  margin-bottom: 3rem;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  .skillHeaderContent {
+    padding: 1rem 0;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    margin: .25rem 0;
+  }
+
+  hr {
+    margin: 1rem auto;
+  }
+
+  &.frontend {
+    h5 {
+      color: $accentColor;
+    }
+    .skillIcon {
+      background-color: $accentColor;
+      mask: url(/images/frontend-icon.svg) no-repeat center;
+    }
+  }
+
+  &.backend {
+    h5 {
+      color: $alternateColor;
+    }
+    .skillIcon {
+      background-color: $alternateColor;
+      mask: url(/images/backend-icon.svg) no-repeat center;
+    }
+  }
+
+  &.deepLearning {
+    h5 {
+      color: $brandColor;
+    }
+    .skillIcon {
+      background-color: $brandColor;
+      mask: url(/images/deep-learning-icon.svg) no-repeat center;
+    }
+  }
+}
+
+.skillContentWrapper {
+  padding: 2rem 0.5rem;
+  margin: 0;
+
+  .title {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.15rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.skillIcon {
+  margin: 1rem 0;
+  height: 125px;
+  width: 125px;
+  display: inline-block;
+}
+
