@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './navigation.module.scss'
 import IconButton from '../icon-button/icon-button'
 import { Link } from 'gatsby'
-import logoImg from '../../../static/logo.svg'
+import logoImg from '../../../static/images/logo.svg'
 import { motion } from 'framer-motion'
 import { complexAnimationDuration, fastAnimationDuration } from '../../constants'
 
