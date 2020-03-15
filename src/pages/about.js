@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function About({ children }) {
   return <Layout>
-    <div className="container-fluid">
+    <div className="container-fluid p-4">
       <div className="row">
         <div className="col text-center">
           <motion.h1 {...introAnimationProps}>About me</motion.h1>

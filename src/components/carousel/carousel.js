@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from './carousel.module.scss'
 import { motion } from 'framer-motion'
 import { complexAnimationDuration } from '../../constants'
+import TagList from '../tag-list/TagList'
+import { Link } from 'gatsby'
 
 export function Carousel(props) {
   const slides = props.slides
@@ -84,11 +86,11 @@ export function Carousel(props) {
             animate={getSlideAnimation(slideIndex, currentStep)}
             transition={{ duration: complexAnimationDuration }}
             variants={slideAnimations}
-            key={slide}
+            key={slide.id}
             className={styles.slide}
           >
-            <div className={styles.imgWrapper} style={{ opacity: slide * 0.3 }}>
-              <span>{slide}</span>
+            <div className={styles.imgWrapper}>
+              <span>{slide.frontmatter.path}</span>
             </div>
             <div
               className={styles.descriptionWrapper}>
@@ -97,7 +99,20 @@ export function Carousel(props) {
                           transition={{ duration: complexAnimationDuration, delay: 0.2 }}
 
                           variants={textAnimation}>
-                {slide}
+                <Link to={slide.frontmatter.path}>
+                  <div className="d-flex flex-column justify-content-center p-4">
+                    <div>
+                      <h3 className={styles.title}>{slide.frontmatter.title}</h3>
+                      <p>{slide.excerpt}</p>
+                      <p>{slide.frontmatter.date}</p>
+                    </div>
+                    <div className="d-flex justify-content-start">
+                      {
+                        slide.frontmatter.tags && <TagList tags={slide.frontmatter.tags}/>
+                      }
+                    </div>
+                  </div>
+                </Link>
               </motion.div>
             </div>
           </motion.div>,

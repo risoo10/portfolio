@@ -10,7 +10,7 @@ import { complexAnimationDuration, fastAnimationDuration } from '../../constants
 const navigationLinks = () => <nav className={styles.navigation}>
   <ul>
     <li><Link to="/about">about me</Link></li>
-    <li><Link to="/software">software</Link></li>
+    <li><Link to="/software">projects</Link></li>
     <li><Link to="/contact">contact</Link></li>
   </ul>
 </nav>

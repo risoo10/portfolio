@@ -17,3 +17,4 @@ export const introAnimationProps = {
   animate: 'visible',
   initial: { opacity: 0, y: '30px' },
 }
+

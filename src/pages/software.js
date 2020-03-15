@@ -5,6 +5,7 @@ import { introAnimationProps } from '../constants'
 import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import styles from './software.module.scss'
+import TagList from '../components/tag-list/TagList'
 
 export const query = graphql`
   query {
@@ -14,7 +15,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 100)
           frontmatter {
             path
             title
@@ -41,8 +42,8 @@ const Software = ({ children, data }) => {
     },
   }
 
-  const posts = edges.map(({ node }, index) => {
-      return <motion.div {...introAnimationProps} custom={index + 1} key={index}
+  const posts = [...edges, ...edges, ...edges].map(({ node }, index) => {
+      return <motion.div {...introAnimationProps} custom={(index + 1) * 0.5} key={index}
                          className={`col-12 col-md-6 ${styles.extraLargeColumn} mb-4`}>
         <motion.div className={styles.postItem}>
           <div className={styles.imageWrapper}>
@@ -54,18 +55,12 @@ const Software = ({ children, data }) => {
                 <div className="d-flex flex-column">
                   <h3 className={styles.title}>{node.frontmatter.title}</h3>
                   <p>{node.excerpt}</p>
+                  <p>{node.frontmatter.date}</p>
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-start align-items-center">
                   {
-                    node.frontmatter.tags && <ul className={styles.tagList}>
-                      {
-                        node.frontmatter.tags.map(tag => <li className={styles.tagItem}>
-                          <small>{tag}</small>
-                        </li>)
-                      }
-                    </ul>
+                    node.frontmatter.tags && <TagList tags={node.frontmatter.tags}></TagList>
                   }
-                  <p className="m-0">{node.frontmatter.date}</p>
                 </div>
               </div>
             </Link>
@@ -76,17 +71,15 @@ const Software = ({ children, data }) => {
   )
 
   return <Layout>
-    <div className="container-fluid p-4">
+    <div className="container-fluid p-2 p-md-4">
       <div className="row">
         <div className="col text-center mb-5">
           <motion.div {...introAnimationProps} className="div">
-            <h1 className="mb-2">Software development</h1>
+            <h1 className="mb-2">Software projects</h1>
             <p className={styles.pageSubtitle}>Here you can find some of interesting software related projects I've
               been working on lately.</p>
           </motion.div>
           <div className="row">
-            {posts}
-            {posts}
             {posts}
           </div>
         </div>

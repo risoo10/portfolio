@@ -5,8 +5,6 @@ title: "My second software post"
 tags: ["Javascript"]
 ---
 
-# My second softtware post
-
 Perfect content for my second post.
 
 List:

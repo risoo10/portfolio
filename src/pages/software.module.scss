@@ -24,21 +24,8 @@
       }
     }
     .textContent {
-      height: 270px;
+      height: 320px;
       padding: 1.5rem;
-    }
-  }
-
-  .tagList {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    .tagItem {
-      background-color: $darkColor;
-      color: $lightColor;
-      border-radius: 50px;
-      padding: .3rem .6rem;
     }
   }
 

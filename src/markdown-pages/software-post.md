@@ -5,8 +5,6 @@ title: "My first software post"
 tags: ["Javascript"]
 ---
 
-# My first softtware post
-
 Perfect content for my fist post.
 
 List:

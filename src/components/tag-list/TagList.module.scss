@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.tagList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+
+  .tagItem {
+    background-color: $darkColor;
+    color: $lightColor;
+    border-radius: 50px;
+    padding: .3rem .6rem;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

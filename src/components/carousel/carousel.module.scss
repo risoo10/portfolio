@@ -72,13 +72,25 @@
       height: 300px;
       padding: 0 2.5rem;
       background-color: $lightBackgroundColor;
+      display: flex;
+      align-items: center;
 
       .descriptionContent {
         width: 100%;
-        height: 100%;
         margin-top: -2.5rem;
         background-color: $lightColor;
-        padding: 1rem;
+
+        a {
+          color: $darkColor;
+
+          &:hover {
+            color: $darkColor;
+
+            .title {
+              color: $accentColor;
+            }
+          }
+        }
       }
     }
   }
