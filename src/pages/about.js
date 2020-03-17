@@ -17,15 +17,11 @@ export default function About({ children }) {
           <motion.div className="row py-4 px-3" {...introAnimationProps} custom={1}>
             <div className="col-12 col-md-4 d-flex justify-content-center align-items-center">
               <img src="/images/aboutme-portrait.jpg" alt="Portrait photo"
-                   className={styles.portraitImage}/>
+                className={styles.portraitImage} />
             </div>
             <div className="col-12 col-md-8 py-5">
               <h3>Hi. I am Richard.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ipsum dolor sit amet,
-                consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation.</p>
+              <p>I am working as frontend and backend developer currently living in Bratislava (SVK). Developing web applications fullfilled my lifetime passion for technology and design. Currently I am studying for my Masters degree in field of Software Engineering. I also work as part-time IT Intern in Sfera a.s. For my previous work history visit my LinkedIn profile. When I am not working I am probably enjoying cup of fine coffee. I also love travelling and photography.</p>
             </div>
           </motion.div>
         </div>
@@ -43,10 +39,10 @@ export default function About({ children }) {
               {/* FRONTEND */}
               <div className={`col-12 col-md-4 ${styles.skillItem} ${styles.frontend}`}>
                 <div className={styles.skillHeaderContent}>
-                  <div className={`${styles.skillIcon}`}/>
+                  <div className={`${styles.skillIcon}`} />
                   <h5 className="font-weight-bold">Frontend</h5>
                 </div>
-                <hr/>
+                <hr />
                 <div className={styles.skillContentWrapper}>
                   <div className="mb-4">
                     <h6 className={styles.title}>Languages:</h6>
@@ -69,10 +65,10 @@ export default function About({ children }) {
               {/* BACKEND */}
               <div className={`col-12 col-md-4 ${styles.skillItem} ${styles.backend}`}>
                 <div className={styles.skillHeaderContent}>
-                  <div className={`${styles.skillIcon}`}/>
+                  <div className={`${styles.skillIcon}`} />
                   <h5 className="font-weight-bold">Backend</h5>
                 </div>
-                <hr/>
+                <hr />
                 <div className={styles.skillContentWrapper}>
                   <div className="mb-4">
                     <h6 className={styles.title}>Languages:</h6>
@@ -94,10 +90,10 @@ export default function About({ children }) {
               {/* DEEP LEARNING */}
               <div className={`col-12 col-md-4 ${styles.skillItem} ${styles.deepLearning}`}>
                 <div className={styles.skillHeaderContent}>
-                  <div className={`${styles.skillIcon}`}/>
+                  <div className={`${styles.skillIcon}`} />
                   <h5 className="font-weight-bold">Deep learning</h5>
                 </div>
-                <hr/>
+                <hr />
                 <div className={styles.skillContentWrapper}>
                   <div className="mb-4">
                     <h6 className={styles.title}>Languages:</h6>
@@ -127,22 +123,24 @@ export default function About({ children }) {
           <div className="row px-3">
             <div className="col-12">
               <h3>Studies</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ipsum dolor sit amet,
-                consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation.</p>
+              <p>I am currently studying Postgradual program Intelligent Software Systems at Faculty of informatics and information technology at Slovak Technical University in Bratislava. The program is focused on Software Engineering. I will graduate from university in June 2020.</p>
+
+              <h4>Undergraduate study 2015-2018</h4>
+              <p>
+                In my bachelor thesis I proposed Deep learning and Computer vision method to remove noise from degraded images taken on mobile devices.
+              </p>
+
+              <h4>Postgraduate study 2018-2020</h4>
+              <p>
+                My research in postgradute study is based in the field of applied computer vision in medical domain. In more detail, I am working on automatic method for 3D image segmentation of anatomical organs from radiological data (CT, MRI) using Deep learning and Computer vision methods.
+              </p>
             </div>
           </div>
           <div className="separator"></div>
           <div className="row px-3">
             <div className="col-12">
               <h3>Graphic design and photography</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ipsum dolor sit amet,
-                consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation.</p>
+              <p>My first exposure to graphic design came through my dad, who worked in digital agency. I embraced this creative itch during high school. I started to design posters and brochures for my school and non-profit organizations in my city. During that time I realized I really like photography and expanded my creative field also to documentary and portrait photography. Later I had an opportunity to shoot at weddings, which was amazing experience for me. After all these are still only my hobbies, perfectly balanced to the other side of nerdy and technical work of programming. </p>
             </div>
           </div>
           <div className="separator"></div>
